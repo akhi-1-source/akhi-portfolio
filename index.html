@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh Gusain | Digital Marketing Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --accent: #00d2ff;
+            --text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            animation: float 6s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: scale(1.02);
+        }
+
+        section {
+            padding: 100px 10%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        nav a:hover { opacity: 1; color: var(--accent); }
+
+        /* Home Section */
+        #home {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 30px;
+            border: 4px solid var(--glass-border);
+            box-shadow: 0 0 50px rgba(0, 210, 255, 0.3);
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent); }
+        h2 { font-size: 1.5rem; margin-bottom: 1.5rem; opacity: 0.9; }
+
+        /* Grid Layouts */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: var(--accent);
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #fff;
+            box-shadow: 0 0 20px var(--accent);
+        }
+
+        /* Journey Styling */
+        .course-card h3 { color: var(--accent); margin-bottom: 10px; font-size: 1.1rem; }
+        .course-card p { font-size: 0.9rem; opacity: 0.8; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #home { grid-template-columns: 1fr; text-align: center; }
+            .profile-img { margin: 0 auto; }
+            nav { display: none; } /* Simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><strong>AKHILESH</strong></div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#journey">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="glass-card">
+            <img src="profile.jpg" alt="Akhilesh Gusain" class="profile-img">
+        </div>
+        <div class="glass-card">
+            <h1>Digital Marketing Enthusiast | Fresher</h1>
+            <p>I am <strong>Akhilesh Gusain</strong>, a passionate and motivated fresher in the field of digital marketing. I have recently completed my training in digital marketing, where I gained hands-on experience through live classes and real-life scenario-based projects. During my course, I worked on multiple practical projects that helped me understand core concepts such as marketing strategy, campaign planning, and audience targeting. I am eager to start my professional journey in digital marketing, where I can contribute my skills, continue learning, and grow in a dynamic environment.</p>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey">
+        <center><h1>My Learning Journey</h1></center>
+        <div class="grid-container">
+            <div class="glass-card course-card">
+                <h3>Course 1: Marketing Fundamentals</h3>
+                <p>Core marketing principles, consumer behaviour, and brand strategy foundations that form the bedrock of all digital efforts.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 2: Build and Rank Your Website</h3>
+                <p>Website architecture, on-page optimisation, technical SEO, and ranking strategies to establish a strong online presence.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 3: Search Engine Marketing</h3>
+                <p>PPC campaign setup, keyword research, ad copywriting, bidding strategies and quality score optimisation.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 4: Social Media Organic</h3>
+                <p>Building organic communities, content calendars, engagement tactics, and platform algorithms across major social networks.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 5: Paid Social Media</h3>
+                <p>Paid campaigns on Facebook, Instagram & LinkedIn, audience segmentation, retargeting and conversion tracking.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 6: Lead, Engage</h3>
+                <p>Lead generation funnels, nurturing sequences, CRM basics, and engagement strategies that move prospects through the funnel.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 7: Google Analytics</h3>
+                <p>GA4 setup, event tracking, custom dashboards, audience insights, and data-driven decision making.</p>
+            </div>
+            <div class="glass-card course-card">
+                <h3>Course 8: Advanced Strategy</h3>
+                <p>Advanced integrated strategies, automation tools, A/B testing, and personal branding to stand out in the industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <center><h1>Featured Projects</h1></center>
+        <div class="grid-container">
+            <div class="glass-card">
+                <h3>Project 1: Marketing Strategy</h3>
+                <p>Comprehensive digital marketing strategy for brand growth.</p>
+                <a href="https://docs.google.com/presentation/d/1NFdKFf_vEA5yxQePZpsNxWq8gieSdWXnq_05xYk3PM8/edit?usp=sharing" target="_blank" class="cta-btn">Explore</a>
+            </div>
+            <div class="glass-card">
+                <h3>Project 2: SEO & Ranking</h3>
+                <p>Implementation of on-page and technical SEO strategies.</p>
+                <a href="https://docs.google.com/presentation/d/1T-hQK3QcQjubPluGgtcrtvQshfFY4uosJgQoewR-PGs/edit?usp=sharing" target="_blank" class="cta-btn">Explore</a>
+            </div>
+            <div class="glass-card">
+                <h3>Project 3: SEM/PPC Campaign</h3>
+                <p>Search engine marketing campaign setup and optimization.</p>
+                <a href="https://docs.google.com/presentation/d/1uYkGpqkRRN59coAR89A1u3lcwD9OMonH7_CdagksUsY/edit?usp=sharing" target="_blank" class="cta-btn">Explore</a>
+            </div>
+            <div class="glass-card">
+                <h3>Using GA4 Insights to Identify Opportunity, Optimize Product Sales & Build a Full-Funnel Marketing Strategy</h3>
+                <p>Advanced data analysis and full-funnel strategy building.</p>
+                <a href="https://docs.google.com/presentation/d/1awhGRjD_Gqb_R5sg04AFy_mnYqYVpPbGJuwgGzgDVRY/edit?usp=sharing" target="_blank" class="cta-btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creatives & Video Section -->
+    <section id="creatives">
+        <center><h1>Creative Portfolio & Reels</h1></center>
+        <div class="grid-container">
+            <div class="glass-card">
+                <h3>Visual Creatives</h3>
+                <p>Graphic designs and marketing imagery.</p>
+                <a href="#" class="cta-btn">View Google Drive</a>
+            </div>
+            <div class="glass-card">
+                <h3>Reels & Videos</h3>
+                <p>Video content and short-form marketing reels.</p>
+                <a href="#" class="cta-btn">View Google Drive</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills, Tools & Certificates -->
+    <section id="skills">
+        <div class="grid-container">
+            <div class="glass-card">
+                <h3>My Skills</h3>
+                <ul>
+                    <li>SEO & SEM</li>
+                    <li>Social Media Marketing</li>
+                    <li>Content Strategy</li>
+                    <li>Lead Generation</li>
+                </ul>
+            </div>
+            <div class="glass-card">
+                <h3>Tools I Use</h3>
+                <ul>
+                    <li>Google Analytics (GA4)</li>
+                    <li>Google Ads / Meta Ads</li>
+                    <li>Canva / CapCut</li>
+                    <li>SEMrush / Ahrefs</li>
+                </ul>
+            </div>
+            <div class="glass-card">
+                <h3>Certifications</h3>
+                <p>Digital Marketing Professional Certification - 2024</p>
+                <p>Google Analytics Individual Qualification</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="glass-card" style="text-align: center;">
+            <h1>Get In Touch</h1>
+            <p>Ready to collaborate or hire? Let's talk!</p>
+            <p style="margin-top: 20px;">Email: your.email@example.com</p>
+            <div style="margin-top: 20px;">
+                <a href="#" class="cta-btn">LinkedIn</a>
+                <a href="#" class="cta-btn">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
